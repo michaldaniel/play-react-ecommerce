@@ -1,0 +1,176 @@
+# Collections API
+
+# List products
+GET /product controllers.ProductController.listView
+# Display single product
+GET /product/:id controllers.ProductController.itemView
+# Create new product
+POST /product controllers.ProductController.createAction
+# Update product
+PUT /product/:id controllers.ProductController.updateAction
+# Delete product
+DELETE /product/:id controllers.ProductController.deleteAction
+# Delete product
+PUT /product/:id controllers.ProductController.deleteAction
+# Display product categories
+GET /product/:id/categories controllers.ProductController.categoriesView
+
+# List customers
+GET /customer controllers.CustomerController.listView
+# Display single customer
+GET /customer/:id controllers.CustomerController.itemView
+# Create new customer
+POST /customer controllers.CustomerController.createAction
+# Update customer data
+PUT /customer/:id controllers.CustomerController.updateAction
+# Delete customer
+DELETE /customer/:id controllers.CustomerController.deleteAction
+# Get customer carts
+GET /customer/:id/cart controllers.CustomerController.cartView
+# Display customer orders
+GET /customer/:id/orders controllers.CustomerController.ordersView
+
+# Display cart
+GET /cart/:id controllers.CartController.itemView
+# Create new cart
+POST /cart controllers.CartController.createAction
+# Update cart data
+PUT /cart/:id controllers.CartController.updateAction
+# Delete cart
+DELETE /cart/:id controllers.CartController.deleteAction
+
+# List orders
+GET /order controllers.OrderController.listView
+# Display order
+GET /order/:id controllers.OrderController.itemView
+# Create new order
+POST /order controllers.OrderController.createAction
+# Update order data
+PUT /order/:id controllers.OrderController.updateAction
+# Delete order
+DELETE /order/:id controllers.OrderController.deleteAction
+# Display order payment info
+GET /order/:id/payment controllers.OrderController.paymentView
+
+# List categories
+GET /category controllers.CategoryController.listView
+# Display category
+GET /category/:id controllers.CategoryController.itemView
+# Create new category
+POST /category controllers.CategoryController.createAction
+# Update category data
+PUT /category/:id controllers.CategoryController.updateAction
+# Delete category
+DELETE /category/:id controllers.CategoryController.deleteAction
+# Get category products
+GET /category/:id/products controllers.CategoryController.productsView
+# Add product to category
+POST /category/:id/products controllers.CategoryController.productsCreateAction
+# Remove product from category
+DELETE category/:id/products/:product controllers.CategoryController.productsDeleteAction
+
+# List statuses
+GET /status controllers.StatusController.listView
+# Display status
+GET /status/:id controllers.StatusController.itemView
+# Create new status
+POST /status controllers.StatusController.createAction
+# Update status data
+PUT /status/:id controllers.StatusController.updateAction
+# Delete status
+DELETE /status/:id controllers.StatusController.deleteAction
+
+# List gates
+GET /gate controllers.GateController.listView
+# Display gate
+GET /gate/:id controllers.GateController.itemView
+# Create new gate
+POST /gate controllers.GateController.createAction
+# Update gate data
+PUT /gate/:id controllers.GateController.updateAction
+# Delete gate
+DELETE /gate/:id controllers.GateController.deleteAction
+
+# List payments
+GET /payment controllers.PaymentController.listView
+# Display payment
+GET /payment/:id controllers.PaymentController.itemView
+# Create new payment
+POST /payment controllers.PaymentController.createAction
+# Update payment data
+PUT /payment/:id controllers.PaymentController.updateAction
+# Delete payment
+DELETE /payment/:id controllers.PaymentController.deleteAction
+
+# Site actions
+
+# Display login view
+GET /login controllers.ViewLoginController.loginView
+# Perform login action
+POST /login controllers.ViewLoginController.loginAction
+
+# Display register view
+GET /register controllers.ViewRegistrationController.registerView
+# Perform register action
+POST /register controllers.ViewRegistrationController.registerAction
+
+# Display admin panel
+GET /admin controllers.ViewAdminController.adminView
+# Display admin login view
+GET /admin/login controllers.ViewAdminController.loginView
+# Perform admin login action
+POST /admin/login controllers.ViewAdminController.loginAction
+# Perform admin register action
+POST /admin/setup controllers.ViewAdminController.setupAction
+
+# Display terms and conditions view
+GET /termsAndConditions controllers.ViewMetaController.termsAndConditionsView
+# Display privacy policy view
+GET /privacyPolicy controllers.ViewMetaController.privacyPolicyView
+# Display privacy policy view
+GET /privacyPolicy controllers.ViewMetaController.privacyPolicyView
+# Display about view
+GET /about controllers.ViewMetaController.aboutView
+# Display contact view
+GET /contact controllers.ViewMetaController.contactView
+
+# Display account info view
+GET /account controllers.ViewAccountController.accountView
+# Display account edit view
+GET /account/edit controllers.ViewAccountController.accountEditView
+# Perform account edit action
+POST /account/edit controllers.ViewAccountController.accountEditAction
+# Display account history
+GET /account/history controllers.ViewAccountController.historyView
+
+# Display order info
+GET /account/order/:id controllers.ViewOderController.orderView
+# Display order payment action
+GET /account/order/:id controllers.ViewOderController.plymentView
+# Perform order payment action
+POST /account/order/:id controllers.ViewOderController.paymentAction
+
+# Display cart
+GET /account/cart controllers.ViewCartController.cartView
+# Order cart
+POST /account/cart controllers.ViewCartController.cartOrderAction
+# Display cart edit view
+GET /account/cart/edit controllers.ViewCartController.cartEditView
+# Perform cart edit action
+POST /account/cart/edit controllers.ViewCartController.cartEditAction
+
+# Display categories
+GET /categories controllers.ViewMainSiteController.categoriesView
+# Display products in category
+GET /categories/:id controllers.ViewMainSiteController.categoryView
+# Display all products
+GET /products controllers.ViewMainSiteController.productsView
+# Display single product
+GET /products/:id controllers.ViewMainSiteController.productView
+# Add product to cart
+POST /products/:id controllers.ViewMainSiteController.productToCartAction 
+# Display homepage
+GET / controllers.ViewMainSiteController.homeView 
+
+
+
